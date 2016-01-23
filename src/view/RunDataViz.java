@@ -2,14 +2,15 @@ package view;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
-
+import java.util.ArrayList;
 import javax.swing.JFrame;
+import model.MapData;
 
 @SuppressWarnings("serial")
 public class RunDataViz extends JFrame {
 
 	private DataViz dataViz;
-	
+
 	public RunDataViz(String string) {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -28,5 +29,9 @@ public class RunDataViz extends JFrame {
 
 	private int getInt(double number) {
 		return (int) (number / 8);
+	}
+
+	private void populateMap(ArrayList<MapData> theMapData) {
+
 	}
 }
