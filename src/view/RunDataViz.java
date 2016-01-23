@@ -14,7 +14,7 @@ public class RunDataViz extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
 		double screenWidth = screensize.getWidth() * 0.8;
-		double screenHeight = screensize.getHeight() * 0.8;
+		double screenHeight = screensize.getHeight() * 0.85;
 		this.setSize((int) screenWidth, (int) screenHeight);
 		this.setLocation(getInt(screenWidth), getInt(screenHeight));
 		dataViz = new DataViz(string);
