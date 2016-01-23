@@ -8,7 +8,7 @@ public class TwitterQ {
 
 		ArrayList<MapData> mdlist = new ArrayList<MapData>();
 
-		MapData.collectData(mdlist);
+		MapData.collectData(mdlist, "");
 
 		for (MapData m : mdlist) {
 			System.out.println("Lat: " + m.getLat() + ", Long: " + m.getLong());
@@ -17,4 +17,6 @@ public class TwitterQ {
 		
 
 	}
+	
+	
 }

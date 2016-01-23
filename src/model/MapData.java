@@ -27,11 +27,11 @@ public class MapData {
 		return latitude;
 	}
 
-	public static void collectData(ArrayList<MapData> mdlist) {
+	public static void collectData(ArrayList<MapData> mdlist, String q) {
 		TwitterFactory tf = new TwitterFactory(Config.getOAuth().build());
 		Twitter twitter = tf.getInstance();
 
-		Query query = new Query("Arizona");
+		Query query = new Query(q);
 		query.setCount(5);
 
 		try {
@@ -55,5 +55,13 @@ public class MapData {
 			System.out.println("Failed to search tweets: " + te.getMessage());
 			System.exit(-1);
 		}
+	}
+	
+	public String coordToString(double lat, double lng){
+		
+		
+		
+		return null;
+		
 	}
 }
