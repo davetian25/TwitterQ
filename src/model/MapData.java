@@ -31,8 +31,8 @@ public class MapData {
 		TwitterFactory tf = new TwitterFactory(Config.getOAuth().build());
 		Twitter twitter = tf.getInstance();
 
-		Query query = new Query("#blizzard2016");
-		query.setCount(3);
+		Query query = new Query("Arizona");
+		query.setCount(5);
 
 		try {
 
@@ -47,13 +47,9 @@ public class MapData {
 						MapData md = new MapData(tweet.getGeoLocation().getLatitude(),
 								tweet.getGeoLocation().getLongitude());
 						mdlist.add(md);
-						// System.out.println("Latitude:" +
-						// tweet.getGeoLocation().getLatitude() + ", Longitude:
-						// " + tweet.getGeoLocation().getLongitude());
 					}
 				}
 			} while ((query = result.nextQuery()) != null);
-			// System.exit(0);
 		} catch (TwitterException te) {
 			te.printStackTrace();
 			System.out.println("Failed to search tweets: " + te.getMessage());

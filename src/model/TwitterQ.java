@@ -13,6 +13,8 @@ public class TwitterQ {
 		for (MapData m : mdlist) {
 			System.out.println("Lat: " + m.getLat() + ", Long: " + m.getLong());
 		}
+		
+		
 
 	}
 }
