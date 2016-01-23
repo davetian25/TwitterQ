@@ -51,7 +51,7 @@ public class DataViz extends JFrame {
 		}
 		Image background = worldBackground.getScaledInstance((int) screenWidth, (int) screenHeight, Image.SCALE_SMOOTH);
 		ImageIcon imageIcon = new ImageIcon(background);
-		this.setContentPane(new JLabel(imageIcon));
+//		this.setContentPane(new JLabel(imageIcon));
 
 		this.add(thePanel);
 		this.setVisible(true);
