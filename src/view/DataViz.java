@@ -45,7 +45,7 @@ public class DataViz extends JFrame {
 
 		worldBackground = null;
 		try {
-			worldBackground = ImageIO.read(new File("./HackArizona/src/Images/World_Background.png"));
+			worldBackground = ImageIO.read(new File("./src/view/World_Background.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
