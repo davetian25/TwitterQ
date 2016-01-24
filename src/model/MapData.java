@@ -2,6 +2,7 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import twitter4j.Query;
 import twitter4j.QueryResult;
@@ -55,6 +56,7 @@ public class MapData {
 			System.out.println("Failed to search tweets: " + te.getMessage());
 			System.exit(-1);
 		}
+		exData(mdlist);
 	}
 	
 	public String coordToString(double lat, double lng){
@@ -62,6 +64,23 @@ public class MapData {
 		
 		
 		return null;
+		
+	}
+
+	public static void exData(ArrayList<MapData> mdlist) {
+		
+		Random rng = new Random();
+		int exp = 50;
+		int size = mdlist.size();
+		for(int i=0; i<size; i++){
+			for(int j=0; j<exp; j++){
+				double rndlong = (rng.nextDouble()*4 - 2) + mdlist.get(i).getLong();
+				double rndlat = (rng.nextDouble()*4 - 2) + mdlist.get(i).getLat();
+				MapData m = new MapData(rndlong, rndlat);
+				mdlist.add(m);
+				
+			}
+		}
 		
 	}
 }
