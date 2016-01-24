@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Josh/Dropbox/twitter4j-core-4.0.4.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+=======
+	<classpathentry kind="lib" path="/Users/timothy/Downloads/twitter4j-4.0.4/lib/twitter4j-core-4.0.4.jar"/>
+>>>>>>> 43cb6cbe03e729d1599298797ed1ef805017ac59
 	<classpathentry kind="output" path="bin"/>
 </classpath>
